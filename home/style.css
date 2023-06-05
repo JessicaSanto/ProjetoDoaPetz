@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte2);
+}
+
+:root {
+    --background-color: #FBFBFB;
+    --color-primary-text: #33303E;
+    --color-secondary-text: #4E4B59;
+    --color-terciary-text: #F5F5F5;
+    --color-quartenary-text: #7A7786;
+
+    --primary-color: #FF8800;
+    --primary-color-variant-one: #FF6E22;
+    --primary-color-variant-two: #FF950D;
+
+    --secondary-color: #0088AE;
+    --additional-color-yellow: #FFE74C;
+    --additional-color-blue: #66ACFF;
+    --additional-color-purple: #A944FF;
+
+    --fonte1: 'Mochiy Pop One', sans-serif;
+    --fonte2: 'Raleway', sans-serif;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+.cabecalho {
+    padding: 32px 0px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logomarca {
+    width: 200px;
+}
+
+.menu {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-navegacao {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.entrar {
+    color: var(--color-secondary-text);
+}
+
+.cadastrar {
+    color: var(--primary-color-variant-one);
+}
+
+.painel-principal {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+.anuncio-petz {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 412px;
+}
+
+.titulo_painel {
+    font-size: 48px;
+    width: 95%;
+    font-weight: 700;
+    color: var(--color-primary-text);
+    line-height: 64px;
+}
+
+.descricao {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.botao_principal {
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    color: var(--color-terciary-text);
+    background-color: var(--primary-color-variant-two);
+}
+
+.imagens-petz {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.parte-fotos-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parte-fotos-01 img {
+    width: 11vw;
+    border-radius: 10px;
+}
+
+.parte-fotos-02 img {
+    width: 25vw;
+    border-radius: 10px;
+}
+
+/* SECTION 2 */
+
+.tipos-perfil {
+    background-color: #ff880026;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_perfil {
+    width: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+}
+
+.card-perfil {
+    width: 28vw;
+    height: 420px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 15px rgba(78, 75, 89, 0.15);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.perfil-card {
+    width: 16vw;
+}
+
+.card-perfil p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.link {
+    font-weight: 600;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.cards-container {
+    width: 80%;
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-perfil:nth-child(1) a {
+    color: var(--additional-color-purple);
+}
+
+.card-perfil:nth-child(2) a {
+    color: var(--secondary-color);
+}
+
+.geral_card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.descricao_card {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 35px;
+    text-align: center;
+    font-family: var(--fonte2);
+    color: var(--color-secondary-text);
+}
+
+
+/* SECTION 3 */
+
+
+.sobre {
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-valores {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.titulo_valores {
+    width: 95%;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: start;
+}
+
+.descricao_valores {
+    font-size: 23px;
+    line-height: 35px;
+    font-weight: 500;
+    color: var(--color-secondary-text);
+}
+
+
+.valores-topicos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+
+.linha-valores {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pilar {
+    margin: 32px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pilar span {
+    font-size: 32px;
+    border-radius: 10px;
+    padding: 16px 20px;
+    color: var(--background-color);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pilar p {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.acao-social .box-pilar {
+    background-color: var(--secondary-color);
+}
+
+.consciencia-ambiental .box-pilar,
+.adocao-responsavel .box-pilar {
+    background-color: var(--primary-color);
+}
+
+.conscientizacao .box-pilar {
+    background-color: var(--additional-color-purple);
+}
+
+/* ROPADE */
+footer {
+    background-color: var(--secondary-color);
+}
+
+.rodape {
+    padding: 30px 75px;
+}
+
+.conteudo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--background-color);
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociais p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 8px;
+}
+
+.redes-sociais i {
+    padding: 0 8px;
+}
+
+.copright {
+    font-weight: 500;
+    text-align: center;
+    color: var(--background-color);
+}
